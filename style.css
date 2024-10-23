@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    font-size: 62.5%;
+}
+body {
+    background: linear-gradient(287.56deg, #190361 0%, #BB00FF 100%);
+    display: grid;
+    place-items: center;
+    height: 100vh;
+}
+
+main {
+    background: #ffffff;
+    border-radius: 0.5rem;
+    height: min.4rem;
+    box-shadow: 0rem 2.0rem 5.0rem rgb(0, 0, 0, 0.8);
+    width: min(42.8rem 90%);
+    margin: 0 auto;
+    text-align: center;
+}
+
+.hide {
+    display: none;
+}
+
+
+/*screenOne*/
+
+h1 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+    white-space: normal; 
+}
+
+h1 span {
+    display: block;
+}
+ 
+p {
+    font-family: "Montserrat", sans-serif;
+    font-weight: "Regular ";
+    font-size: 1.5rem;
+    margin-top: 1.4rem;
+    margin-bottom: 2.0rem;
+}
+
+#btnClick {
+    cursor: pointer;
+    transition: transform 0.1s;
+}
+
+#btnClick:hover {
+    animation: tremer 0.5s infinite;
+}
+
+
+@keyframes tremer {
+    0% { transform: translateX(0); }
+    25% { transform: translateX(-1.0rem); } /* Move para a esquerda */
+    50% { transform: translateX(1.0rem); }  /* Move para a direita */
+    75% { transform: translateX(-1.0rem); } /* Move para a esquerda */
+    100% { transform: translateX(0); }
+}
+
+.screenOne {
+    margin-top: 4.8rem;
+    margin-right: 6.4rem;
+    margin-bottom: 6.4rem;
+    margin-left: 6.4rem;
+}
+
+
+/*screenTwo*/
+
+.screenTwo {
+    margin-bottom: 4.8rem;
+    margin-top: 4.8rem;
+    margin-right: 6.4rem;
+    margin-left: 6.4rem;
+}
+
+h2 {
+    font-family: "Montserrat", sans-serif;
+    font-weight: bold;
+    font-size: 2.4rem;
+    white-space: normal; 
+}
+
+h2 span {
+    display: block;
+}
+
+.container p {
+    font-family: "Dancing Script", cursive;
+    font-weight: 400;
+    font-size: 2.4rem;
+}
+
+
+.container {
+    background-color:rgba(228, 237, 241, 1);
+    box-shadow: .2rem .2rem .2rem rgba(85, 85, 85, 0.5);
+    height: auto;
+    width: 29.3rem; 
+    padding: 1.0rem; 
+    border: 0rem solid black; 
+    display: block;
+    text-align: center;
+    margin-top: 1.7rem;
+    opacity: 0; 
+    animation: subirEExpandir 2s forwards;
+}
+
+@keyframes subirEExpandir {
+    0% {
+        transform: translateY(20rem) scale(0.5); 
+        opacity: 0; 
+    }
+    100% {
+        transform: translateY(0) scale(1); 
+        opacity: 1; 
+    }
+}
+
+#btnReset {
+    font-family: "DM Sans", sans-serif;
+    display: inline-block;
+    width: 17.4rem;
+    height: 5.2rem;
+    background-color: #FF9500;
+    border: none;
+    color: #ffffff;
+    font-size: 1.5rem;
+    border-radius: .5rem .5rem .5rem .5rem;
+    transition: box-shadow 0.2s ease;
+    cursor: pointer;
+}
+
+#btnReset:hover {
+    background-color: #ed9720;
+}
+
+
+
+
+
